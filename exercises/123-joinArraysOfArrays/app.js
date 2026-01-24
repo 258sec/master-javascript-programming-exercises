@@ -1,5 +1,5 @@
 function joinArrayOfArrays(arr) {
-  // your code here
+  return arr.reduce ((anid ,current) => anid.concat(current), []);
   
 }
 

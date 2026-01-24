@@ -1,5 +1,13 @@
 function findShortestElement(arr) {
-    // your code here
+    if (arr.length ==0) { return ""};
+    return arr.reduce((shortest, current) =>{
+        if (current.length < shortest.length){
+            shortest= current;
+        }
+        
+        else return shortest;
+        
+    }, arr[0]);
 
 }
 

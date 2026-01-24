@@ -1,5 +1,11 @@
 function findSmallestNumberAmongMixedElements(arr) {
-  // your code here
+  if (arr.length === 0) return 0;
+  
+ const numbers = arr.filter(element => typeof element === "number");
+  if (numbers.length === 0) return 0;
+
+  return Math.min(...numbers);
+
   
 }
 
